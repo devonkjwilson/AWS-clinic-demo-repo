@@ -1,0 +1,20 @@
+The platform is composed of the following layers:
+Ingestion Layer
+REST API providing clinic operational data:
+Patients
+Providers
+Appointments
+Visit events
+Charges
+Python ingestion jobs retrieve data incrementally and store raw JSON in Amazon S3
+Storage and Processing
+Amazon S3 used as the data lake for raw and curated datasets
+AWS Glue used to transform raw JSON into structured datasets
+Data normalized and cleaned in a Silver layer using Spark transformations
+Analytics Layer
+Amazon Redshift Serverless used as the analytics warehouse
+Gold layer tables structured in a dimensional model to support reporting and BI tools
+Orchestration
+Apache Airflow coordinates ingestion, transformation, and loading workflows
+Visualization
+Power BI or Amazon QuickSight used to build dashboards for operational reporting
