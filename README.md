@@ -1,2 +1,2 @@
-# AWS-clinic-demo-repo
 This project demonstrates the design and implementation of an end-to-end healthcare operations analytics platform built on AWS. The system ingests operational clinic data from an API, processes it through a medallion-style architecture (Bronze, Silver, Gold), and serves curated datasets to a warehouse for reporting and analytics.
+The goal of this repository is to show how modern data engineering patterns can be applied to real-world healthcare operations scenarios such as appointment tracking, visit cycle time analysis, provider utilization, and revenue event monitoring.
